@@ -3,6 +3,7 @@ window.addEventListener("scroll", onScroll);
 function onScroll() {
   showNavOnScroll();
   showBackToTopButtonOnScroll();
+  transformBackToTopButtonInWhiteOnFooter();
   activateMenuAtCurrentSection(home);
   activateMenuAtCurrentSection(services);
   activateMenuAtCurrentSection(about);
@@ -44,6 +45,14 @@ function showBackToTopButtonOnScroll() {
     backToTopButton.classList.add("show");
   } else {
     backToTopButton.classList.remove("show");
+  }
+}
+
+function transformBackToTopButtonInWhiteOnFooter() {
+  if (scrollY > 2550) {
+    backToTopButton.classList.add("white");
+  } else {
+    backToTopButton.classList.remove("white");
   }
 }
 
