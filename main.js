@@ -49,10 +49,15 @@ function showBackToTopButtonOnScroll() {
 }
 
 function transformBackToTopButtonInWhiteOnFooter() {
-  if (scrollY > 2550) {
-    backToTopButton.classList.add("white");
+  if (scrollY > 2630 && innerWidth > 1024) {
+    backToTopButton.classList.add("white-button");
+  } else if (scrollY > 4220 && innerWidth < 1024 && innerWidth > 340) {
+    backToTopButton.classList.add("white-button");
+  } else if (scrollY > 4530 && innerWidth < 340) {
+    backToTopButton.classList.add("white-button");
+    console.log(scrollY);
   } else {
-    backToTopButton.classList.remove("white");
+    backToTopButton.classList.remove("white-button");
   }
 }
 

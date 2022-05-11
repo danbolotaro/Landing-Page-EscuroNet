@@ -501,11 +501,11 @@ footer .social-links {
   transform: translateY(0);
 }
 
-#backToTopButton.white circle{
+#backToTopButton.white-button circle {
   fill: #fff;
 }
 
-#backToTopButton.white path{
+#backToTopButton.white-button path {
   stroke: var(--primary-color);
 }
 
@@ -605,7 +605,6 @@ footer .social-links {
     color: #ffffff;
   }
 
-
   nav#navigation.scroll .menu ul li a {
     color: var(--brand-green-2);
     opacity: 0.6;
@@ -656,14 +655,14 @@ footer .social-links {
     opacity: 1;
   }
 
-  nav#navigation.scroll .menu li a.active{
+  nav#navigation.scroll .menu li a.active {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
   }
 
-  nav#navigation.scroll .menu a.button:hover{
+  nav#navigation.scroll .menu a.button:hover {
     background: #001eb6;
-    border-color: #fff
+    border-color: #fff;
   }
 
   /* HOME */
