@@ -129,13 +129,8 @@ section .content p {
   fill: var(--brand-green);
 }
 
-#navigation .logo path[fill*="00856F"],
 #backToTopButton circle {
   fill: var(--primary-color);
-}
-#button.open-menu path[stroke*="#00856F"],
-#contact li path {
-  stroke: var(--primary-color);
 }
 
 body.menu-expanded #navigation .logo,
@@ -144,8 +139,31 @@ body.menu-expanded #navigation .logo,
   color: #fff;
 }
 
-#navigation.scroll button.open-menu path[stroke*="#00856F"] {
-  stroke: white;
+#navigation.scroll .word-menu {
+  font-size: 1.4rem;
+  border-radius: 6px;
+  border: 1px solid white;
+  padding: 6px 12px;
+  padding-top: 7px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.08rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  color: white;
+}
+
+.word-menu {
+  font-size: 1.4rem;
+  border-radius: 6px;
+  border: 1px solid var(--primary-color);
+  padding: 6px 12px;
+  padding-top: 7px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.08rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
 }
 
 a {
@@ -444,6 +462,71 @@ body.menu-expanded button path {
   gap: 0.8rem;
 }
 
+/*=== TESTIMONIALS ======================*/
+
+#testimonials {
+  background: #fff;
+}
+
+#testimonials blockquote {
+  padding: 2rem;
+  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.07);
+  border: 2px solid rgba(0, 9, 139, 0.432);
+  border-radius: 0.25rem;
+}
+
+#testimonials blockquote p {
+  position: relative;
+  text-indent: 1.875rem;
+  margin-bottom: 1.5rem;
+  color: var(--headline);
+}
+
+#testimonials blockquote p span {
+  font: 700 2.7rem serif;
+
+  position: absolute;
+  top: -0.5rem;
+  left: -1.3rem;
+  color: var(--primary-color);
+}
+
+#testimonials cite {
+  display: flex;
+  align-items: center;
+  font-style: italic;
+  color: var(--paragraph);
+  font-weight: 600;
+}
+
+#testimonials cite img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+/*=== SWIPER =======================*/
+
+.swiper-slide {
+  height: auto;
+  padding: 4rem 1rem;
+}
+
+.swiper.pagination-buller {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.swiper.pagination-buller-active {
+  background: var(--primary-color);
+}
+
+.wrapper-swiper {
+  width: min(58%);
+}
+
 /*=== FOOTER =======================*/
 
 footer {
@@ -516,6 +599,10 @@ footer .social-links {
 
   body {
     overflow: auto;
+  }
+
+  .wrapper-swiper {
+    width: min(78%);
   }
 
   .wrapper {

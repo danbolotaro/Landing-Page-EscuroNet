@@ -7,6 +7,7 @@
   <title>Escuro Net</title>
   <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -50,14 +51,12 @@
         </ul>
 
       </div>
-      <button aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()" class="open-menu"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M10 20H30" stroke="#011684" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M10 12H30" stroke="#011684" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M18 28L30 28" stroke="#011684" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-        </svg></button>
-      <button aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()" class="close-menu"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M21 1L1 21M1 1L21 21" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-        </svg></button>
+      <button aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()" class="open-menu">
+        <p class="word-menu">Menu</p>
+      </button>
+      <button aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()" class="close-menu">
+        <p class="word-menu">Menu</p>
+      </button>
     </div>
   </nav>
 
@@ -233,9 +232,70 @@
     </div>
   </section>
 
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="main.js">
-  </script>
+
+  <section id="testimonials">
+    <div class="swiper wrapper-swiper">
+      <header>
+        <h2 class="title">Depoimentos de nossos clientes</h2>
+      </header>
+      <div class="testimonials swiper-container">
+        <div class="swiper-wrapper">
+          <div class="testimonial swiper-slide">
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas facilis eius pariatur quidem tenetur eum, iure deserunt possimus repudiandae, consequatur eveniet dolor! Error nostrum pariatur possimus, autem veritatis a laboriosam?
+              </p>
+              <cite>
+                <img src="./assets/Paulo-Allan.jpg" alt="Foto Paulo Allan">
+                Paulo Allan (Dono da Macrosoft)
+              </cite>
+            </blockquote>
+          </div>
+
+          <div class="testimonial swiper-slide">
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas facilis eius pariatur quidem tenetur eum, iure deserunt possimus repudiandae, consequatur eveniet dolor! Error nostrum pariatur possimus, autem veritatis a laboriosam?
+              </p>
+              <cite>
+                <img src="./assets/Jefferson-Beijos.jpg" alt="Foto Jefferson Beijos">
+                Jefferson Beijos (CEO da Nozama)
+              </cite>
+            </blockquote>
+          </div>
+
+          <div class="testimonial swiper-slide">
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas facilis eius pariatur quidem tenetur eum, iure deserunt possimus repudiandae, consequatur eveniet dolor! Error nostrum pariatur possimus, autem veritatis a laboriosam?
+              </p>
+              <cite>
+                <img src="./assets/Elisa-Peregrina.jpg" alt="Foto Elisa Peregrina">
+                Elisa Peregrina (Dona da Magazine Elisa)
+              </cite>
+            </blockquote>
+          </div>
+          <div class="testimonial swiper-slide">
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas facilis eius pariatur quidem tenetur eum, iure deserunt possimus repudiandae, consequatur eveniet dolor! Error nostrum pariatur possimus, autem veritatis a laboriosam?
+              </p>
+              <cite>
+                <img src="./assets/Steven-Grant.jpg" alt="Foto Steven Grant">
+                Steven Grant (CEO da PineApple)
+              </cite>
+            </blockquote>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+  </section>
 
   <footer>
 
@@ -285,6 +345,13 @@
       <path d="M13 20L20 13L27 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
     </svg>
   </a>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script src="main.js">
+  </script>
 
 </body>
 
