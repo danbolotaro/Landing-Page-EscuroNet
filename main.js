@@ -12,7 +12,6 @@ function onScroll() {
 
 function activateMenuAtCurrentSection(section) {
   const targetLine = scrollY + innerHeight / 2;
-
   const sectionTop = section.offsetTop;
   const sectionHeight = section.offsetHeight;
   const sectionTopReachOrPassedTargetLine = targetLine >= sectionTop;
@@ -48,7 +47,7 @@ function showBackToTopButtonOnScroll() {
   }
 }
 
-function transformBackToTopButtonInWhiteOnFooter() {
+/*function transformBackToTopButtonInWhiteOnFooter() {
   console.log(scrollY);
   if (scrollY > 3300 && innerWidth >= 1424) {
     backToTopButton.classList.add("white-button");
@@ -73,7 +72,7 @@ function transformBackToTopButtonInWhiteOnFooter() {
   } else {
     backToTopButton.classList.remove("white-button");
   }
-}
+}*/
 
 function openMenu() {
   document.body.classList.add("menu-expanded");

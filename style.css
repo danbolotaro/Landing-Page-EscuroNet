@@ -166,6 +166,19 @@ body.menu-expanded #navigation .logo,
   text-transform: uppercase;
 }
 
+.close-x {
+  font-size: 1.4rem;
+  border-radius: 6px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 6px 12px;
+  padding-top: 7px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+}
+
 a {
   text-decoration: none;
 }
