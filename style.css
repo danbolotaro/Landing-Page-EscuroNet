@@ -130,7 +130,7 @@ section .content p {
 }
 
 #backToTopButton circle {
-  fill: var(--primary-color);
+  fill: var(--brand-button-hover);
 }
 
 body.menu-expanded #navigation .logo,
@@ -595,14 +595,6 @@ footer .social-links {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
-}
-
-#backToTopButton.white-button circle {
-  fill: #fff;
-}
-
-#backToTopButton.white-button path {
-  stroke: var(--primary-color);
 }
 
 /*=== RESPONSIVO ====================*/
